@@ -10,7 +10,7 @@ const instance = axios.create({
 // 请求拦截器
 instance.interceptors.request.use((request) => {
   // 用户相关的都放行
-  if (request.url.startsWith('/api/user/')) {
+  if (request.url.startsWith('/backend/user/')) {
     return request
   }
   if (!request.headers['Authorization']) {
