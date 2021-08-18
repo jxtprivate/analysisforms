@@ -7,7 +7,6 @@ const instance = axios.create({
   timeout: 100 * 1000,
   headers: { 'Content-Type': 'application/json'},
 })
-
 // 请求拦截器
 instance.interceptors.request.use((request) => {
   // 用户相关的都放行
